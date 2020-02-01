@@ -1,0 +1,163 @@
+<!-- 
+
+What is Responsive Visiblity?
+There are many use cases for the responsive display of elements. You may want to show an element only on desktop screens, or hide an element only on phones and tablets, or show an element within a view-port range such as tablets.
+
+-->
+
+<!-- 
+In this lecture, we are going to learn how to use some other responsive utility classes that bootstrap provides.
+What they allow us to do is to only display certain elements  with particular devices in sizes.
+So, what we want to do is that we want our nested columns to disappear when screen size is smaller.
+So, to do this Bootstrap provides us a class called 'visible'.
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+
+    <title>Nesting Columns</title>
+      
+      
+      
+      
+      <style>
+
+         
+          .row{
+              background-color:plum;
+          }
+          
+          .col1{
+              color:black;
+              margin:3px;
+              background-color:pink;
+              min-height:250px;
+              text-align: center;
+          }
+          .col2{
+              color:black;
+              margin:3px;
+              background-color:deeppink;
+              min-height:250px;
+              text-align:center;
+          }
+          .col3{
+              color:black;
+              margin:3px;
+              background-color:lightpink;
+              min-height:250px;
+              text-align:center;
+          }
+          .insiderow{
+              color:black;
+              text-align:center;
+              min-height:100px;
+              background-color:aquamarine;
+          }
+      </style>
+      
+      
+      
+      
+      
+      
+      
+  </head>
+  <body>
+    
+      
+      <div class="container">
+      
+      
+      <div class="row">
+          
+          
+          
+          <div class="col-md-3">
+              <div class="col1">Side Left bar</div></div>
+          
+          
+          <!-- we want to nest columns in our main section grid.  -->
+          <div class="col-md-6">
+              <div class="col2">Main Menu
+              
+         <!-- so here we want our nested columns to only display in medium size devices and in larger size devices. Here 'md' means medium size devices and 'lg' means larger size devices. --> 
+                  <!--
+So, in the bootstrap 3 we do the same as visible-md visible md-lg.
+But in bootstrap 4 we have to do this in this manner:
+
+
+Converting from 3.x or 4 Alpha to Bootstrap 4 Beta
+Here’s the complete list of changes you can make to swap out the deprecated hidden-* and visible-* classes…
+* `hidden-xs-down` = `d-none d-sm-block`
+* `hidden-sm-down` = `d-none d-md-block`
+* `hidden-md-down` = `d-none d-lg-block`
+* `hidden-lg-down` = `d-none d-xl-block`
+* `hidden-xl-down` = `d-none` (always hidden)
+* `hidden-xs-up` = `d-none` (always hidden)
+* `hidden-sm-up` = `d-sm-none`
+* `hidden-md-up` = `d-md-none`
+* `hidden-lg-up` = `d-lg-none`
+* `hidden-xl-up` = `d-xl-none`
+* `hidden-xs` (only) = `d-none d-sm-block` (same as `hidden-xs-down`)
+* `hidden-sm` (only) = `d-block d-sm-none d-md-block`
+* `hidden-md` (only) = `d-block d-md-none d-lg-block`
+* `hidden-lg` (only) = `d-block d-lg-none d-xl-block`
+* `hidden-xl` (only) = `d-block d-xl-none`
+* `visible-xs` (only) = `d-block d-sm-none`
+* `visible-sm` (only) = `d-none d-sm-block d-md-none`
+* `visible-md` (only) = `d-none d-md-block d-lg-none`
+* `visible-lg` (only) = `d-none d-lg-block d-xl-none`
+* `visible-xl` (only) = `d-none d-xl-block`
+
+-->
+              <div class="row">
+               
+                  <div class="col-md-4  d-none d-md-block d-lg-none  d-none d-lg-block d-xl-none ">
+                  
+                      <div class="insiderow">Inside Row</div>
+                  
+                  </div>
+                  <!-- Here we are nesting more columns -->
+               
+                  <div class="col-md-4  d-none d-md-block d-lg-none  d-none d-lg-block d-xl-none">
+                  
+                      <div class="insiderow">Inside Row</div>
+                  
+                  </div>
+                  <div class="col-md-4 d-none d-md-block d-lg-none  d-none d-lg-block d-xl-none">
+                  
+                      <div class="insiderow">Inside Row</div>
+                  
+                  </div>
+               
+                  </div>
+              
+              
+              </div></div>
+          
+          <div class="col-md-3">
+              <div class="col3">Side right bar</div>
+          </div>
+          
+          </div>
+      
+      
+      
+      </div>
+      
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js" ></script>
+    
+  </body>
+</html>
