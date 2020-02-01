@@ -1,0 +1,152 @@
+<!--
+So here are the classes.
+Converting from 3.x or 4 Alpha to Bootstrap 4 Beta
+Here’s the complete list of changes you can make to swap out the deprecated hidden-* and visible-* classes…
+* `hidden-xs-down` = `d-none d-sm-block`
+* `hidden-sm-down` = `d-none d-md-block`
+* `hidden-md-down` = `d-none d-lg-block`
+* `hidden-lg-down` = `d-none d-xl-block`
+* `hidden-xl-down` = `d-none` (always hidden)
+* `hidden-xs-up` = `d-none` (always hidden)
+* `hidden-sm-up` = `d-sm-none`
+* `hidden-md-up` = `d-md-none`
+* `hidden-lg-up` = `d-lg-none`
+* `hidden-xl-up` = `d-xl-none`
+* `hidden-xs` (only) = `d-none d-sm-block` (same as `hidden-xs-down`)
+* `hidden-sm` (only) = `d-block d-sm-none d-md-block`
+* `hidden-md` (only) = `d-block d-md-none d-lg-block`
+* `hidden-lg` (only) = `d-block d-lg-none d-xl-block`
+* `hidden-xl` (only) = `d-block d-xl-none`
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must com *after* these three meta tags. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+
+    <title>Hidden and Multiple Classes</title>
+      
+      <style>
+      
+            .row{
+              background-color:plum;
+          }
+          
+          .col1{
+              color:black;
+              margin:3px;
+              background-color:pink;
+              min-height:150px;
+              text-align: center;
+          }
+          .col2{
+              color:black;
+              margin:3px;
+              background-color:deeppink;
+              min-height:150px;
+              text-align:center;
+          }
+          .col3{
+              color:black;
+              margin:3px;
+              background-color:lightpink;
+              min-height:150px;
+              text-align:center;
+          }
+      
+      </style>
+      
+  </head>
+  <body>
+    
+
+      <div class="container">
+      
+      
+          <div class="row">
+          
+              <div class="col-md-4">
+              
+                  <div class="col1">Left Side bar</div>
+              
+              </div>
+                  <div class="col-md-4">
+              
+                  <div class="col2">Main Content </div>
+              
+              </div>
+                  <div class="col-md-4">
+              
+                  <div class="col3">Right Side bar</div>
+              
+              </div>
+          
+          </div>
+          <div class="row">
+          
+          
+              <div><h3>Now we want to hide right side bar on screens having size less than medium screens</h3></div>
+          
+          </div>
+          
+          <div class="row">
+          
+              <div class="col-md-4">
+              
+                  <div class="col1">Left Side bar</div>
+              
+              </div>
+                  <div class="col-md-4">
+              
+                  <div class="col2">Main Content </div>
+              
+              </div>
+              <!-- so what we have done in this is that we just specify the md to none which means that hide right bar on screen having size equal to md or smaller. and only display it on lg. -->
+                  <div class="col-md-4 d-none d-md-none d-lg-block">
+              
+                  <div class="col3">Right Side bar</div>
+              
+              </div>
+          
+          </div>
+          <div class="row">
+          
+          
+              <div><h3>Now let's apply multiple classes</h3></div>
+          
+          </div>
+          <div class="row">
+          <!-- now here we have used multiple classes which means that size of this column will be 12 on lg screens , 6 on md screens and 3 on sm screens -->
+          <div class="col-md-6 col-lg-12 col-sm-3">
+              
+              <div class="col2">Section </div>
+              
+              </div>
+          
+          </div>
+      
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="jquery.min.js" ></script>
+      <!-- include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js" ></script>
+
+  </body>
+</html>
