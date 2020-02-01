@@ -1,0 +1,147 @@
+<!-- 
+In this lecture we will see how we can order our columns according to different screens.
+class is : order-screen_size-value
+ e.g;      order-md-2
+           order-lg-1
+so we write 1 if we want to keep specific column at order 1.
+we write 2 if we want to keep specific column at 2 and so on...
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must com *after* these three meta tags. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+
+    <title>Practice Order</title>
+  
+      <style>
+                .row{
+              background-color:plum;
+          }
+          
+          .col1{
+              color:black;
+              margin:3px;
+              background-color:orange;
+              min-height:150px;
+              text-align: center;
+          }
+          .col2{
+              color:black;
+              margin:3px;
+              background-color:deeppink;
+              min-height:150px;
+              text-align:center;
+          }     
+          .col3{
+              color:black;
+              margin:3px;
+              background-color:lightpink;
+              min-height:150px;
+              text-align:center;
+          }
+      </style>
+    
+    </head>
+    
+    
+    
+    
+  <body>
+    
+      
+    <div class="container">
+      
+      <!-- so here is the simple columns without ordering -->
+        <div class="row">
+        
+        
+            <div class="col-md-6">
+            
+                <div class="col1">Left side bar</div>
+            
+            </div>
+            
+        
+            <div class="col-md-6">
+            
+                <div class="col2">Right side bar</div>
+            
+            </div>
+        </div>
+        <!-- now in this row we want our main content to be at center at larger screens and at first on smaller or medium screens -->
+        <div class="row">
+            <div>
+            <h1>Now we will apply order on this</h1>
+            </div>
+        </div>    
+            
+            <div class="row">
+        
+        
+            <div class="col-md-6 order-md-1 order-lg-2 order-sm-1" >
+            
+                <div class="col1">Main Content Area</div>
+            
+            </div>
+            
+        
+            <div class="col-md-6 order-md-2 order-lg-1 order-sm-2">
+            
+                <div class="col2">Left side bar</div>
+            
+            </div>
+        
+            <div>
+        
+        </div>
+      
+      </div>  
+      
+      
+      <div class="row">
+        
+        <div>
+          Now apply order on multiple columns.
+          
+          </div>
+          
+        </div>
+<!-- in this row we want our main content to be at center at larger screens and at first on smaller or medium screens  -->      
+      <div class="row">
+        
+        <div class="col-md-2 order-md-2 order-lg-1 order-sm-2">
+          
+          <div class="col1">
+            Left side bar.
+            </div>
+          </div>
+        <div class="col-md-8 order-md-1 order-lg-2 order-sm-1">
+          <div class="col2">
+            Main Content Area
+            </div>
+          </div>
+        <div class="col-md-2 order-md-3 order-lg-3 order-sm-3">
+          <div class="col3">Right side bar</div>
+          </div>
+        </div>
+      
+      
+      
+      
+      
+      
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="jquery.min.js" ></script>
+      <!-- include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js" ></script>
+
+  </body>
+</html>
