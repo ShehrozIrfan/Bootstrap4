@@ -1,0 +1,16 @@
+Understanding Bootstrap 4 Tiers
+To understand how this works, you’ll want to first understand the 5 Bootstrap 4 display tiers or “breakpoints”…
+// Extra small devices (portrait phones, less than 576px)
+default (max-width: 575px)
+
+// Small devices (landscape phones, 576px and up)
+(sm) small (min-width: 576px) and (max-width: 767px)
+ 
+// Medium devices (tablets, 768px and up)
+(md) medium (min-width: 768px) and (max-width: 991px) 
+
+// Large devices (desktops, 992px and up)
+(lg) large (min-width: 992px) and (max-width: 1199px) 
+
+// Extra large devices (large desktops, 1200px and up)
+(xl)
