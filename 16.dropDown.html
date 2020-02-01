@@ -1,0 +1,57 @@
+<!-- 
+In this lecture we will see how we can create a drop down button using bootstrap. In this you can also see that we also changed meta files + script files.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  
+</head>
+    
+    <body>
+    
+        <!-- 
+The .dropdown class indicates a dropdown menu.
+
+To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and the data-toggle="dropdown" attribute.
+
+Add the .dropdown-menu class to a <div> element to actually build the dropdown menu. Then add the .dropdown-item class to each element (links or buttons) inside the dropdown menu.
+
+-->
+      
+    <div class="dropdown">
+        
+        
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Choose a Selection</button> 
+        
+        
+        <!--
+Another way of creating drop-down:
+        <ul class="dropdown-menu">
+        
+        
+            <li><a href="#">Car</a></li>
+            <li><a href="#">Bus</a></li>
+            <li><a href="#">Aeroplane</a></li>
+        
+        </ul>
+        -->
+        
+        <div class="dropdown-menu">            <a class="dropdown-item">Car</a>
+            <a class="dropdown-item">Bus</a>
+            <a class="dropdown-item">Aeroplane</a>
+        </div>
+        
+        
+        
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
