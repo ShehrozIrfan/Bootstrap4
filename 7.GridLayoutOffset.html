@@ -1,0 +1,125 @@
+<!-- 
+In this lecture, we will see how we can move one column to right. Remember the columns will always move from left to right.
+So to move columns Bootstrap provides us a class. which uses offset.
+
+class="col-md-offset-5";
+
+here the 5 is the number which moves your columns all the way to right
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+
+    <title>Resizing Grids</title>
+      
+      
+      
+      
+      <style>
+
+         
+          .row{
+              background-color:plum;
+          }
+          
+          .col1{
+              color:black;
+              margin:3px;
+              background-color:pink;
+              min-height:250px;
+              text-align: center;
+          }
+          .col2{
+              color:black;
+              margin:3px;
+              background-color:deeppink;
+              min-height:250px;
+              text-align:center;
+          }
+          .col3{
+              color:black;
+              margin:3px;
+              background-color:lightpink;
+              min-height:250px;
+              text-align:center;
+          }
+          .col4{
+              color:black;
+              margin:3px;
+              background-color:mediumpurple;
+              min-height:250px;
+              text-align:center;
+          }
+              </style>
+      
+      
+      
+      
+      
+      
+      
+  </head>
+  <body>
+    
+      
+      <div class="container">
+      
+      
+      <div class="row">
+          
+          
+          
+          <div class="col-md-3">
+              <div class="col1">Side Left bar</div></div>
+          
+          
+          <div class="col-md-6">
+              <div class="col2">Side Left bar</div></div>
+          
+          <div class="col-md-3">
+              <div class="col3">Side Left bar</div>
+          </div>
+          
+          </div>
+      
+      <!-- so here we create another row. -->
+          <div class="row">
+          
+        <!-- so we want to move this column to right. so we use Bootstrap class. 
+        so we do the same thing in bootstrap 3 like this col-md-offset-9;
+but this will not work in bootstrap 4 so what we do in bootstrap 4 is:
+offset-md-9;
+-->  
+              <div class="col-md-3 offset-md-9">
+              <div class="col4">Col 4</div>
+              </div>
+          
+          
+          </div>
+          
+      
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js" ></script>
+    
+  </body>
+</html>
