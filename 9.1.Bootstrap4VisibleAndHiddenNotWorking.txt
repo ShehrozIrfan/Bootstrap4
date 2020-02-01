@@ -1,0 +1,5 @@
+As there are alot of differences between bootstrap 3 and 4. So to convert bootstrap 3
+visible and hidden to bootstrap 4 visit the link below:
+
+
+https://medium.com/wdstack/bootstrap-4-hidden-visible-dd969a4c5854
