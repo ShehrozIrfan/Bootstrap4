@@ -1,0 +1,132 @@
+<!-- 
+In this lecture, we will see how we can nest columns in grid.
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+
+    <title>Nesting Columns</title>
+      
+      
+      
+      
+      <style>
+
+         
+          .row{
+              background-color:plum;
+          }
+          
+          .col1{
+              color:black;
+              margin:3px;
+              background-color:pink;
+              min-height:250px;
+              text-align: center;
+          }
+          .col2{
+              color:black;
+              margin:3px;
+              background-color:deeppink;
+              min-height:250px;
+              text-align:center;
+          }
+          .col3{
+              color:black;
+              margin:3px;
+              background-color:lightpink;
+              min-height:250px;
+              text-align:center;
+          }
+          .insiderow{
+              color:black;
+              text-align:center;
+              min-height:100px;
+              background-color:aquamarine;
+          }
+      </style>
+      
+      
+      
+      
+      
+      
+      
+  </head>
+  <body>
+    
+      
+      <div class="container">
+      
+      
+      <div class="row">
+          
+          
+          
+          <div class="col-md-3">
+              <div class="col1">Side Left bar</div></div>
+          
+          
+          <!-- we want to nest columns in our main section grid.  -->
+          <div class="col-md-6">
+              <div class="col2">Main Menu
+              
+              
+              <div class="row">
+                 <!-- so in case of nested columns the value 4 is adjusted to the value 6 of its parent row. change the nested value to 12 to see the magic. --> 
+                  <div class="col-md-4">
+                  
+                      <div class="insiderow">Inside Row</div>
+                  
+                  </div>
+                  <!-- Here we are nesting more columns -->
+                  <!--
+                  <div class="col-md-4">
+                  
+                      <div class="insiderow">Inside Row</div>
+                  
+                  </div>
+                  <div class="col-md-4">
+                  
+                      <div class="insiderow">Inside Row</div>
+                  
+                  </div>
+                  -->
+                  </div>
+              
+              
+              </div></div>
+          
+          <div class="col-md-3">
+              <div class="col3">Side right bar</div>
+          </div>
+          
+          </div>
+      
+      
+      
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js" ></script>
+    
+  </body>
+</html>
