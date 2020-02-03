@@ -1,0 +1,91 @@
+<!-- in this lecture we will see how we can align our navbar to left , to right , or to center 
+by default it is left
+
+
+->  to align navbar to center use:
+justify-content-center
+
+
+->  to align navbar to right use:
+ml-auto-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Aligning Navbar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  
+</head>
+    
+    <body>
+    <div class="container">
+      <h3>Left Aligned Nav bar</h3>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        
+        
+        
+            <ul class="navbar-nav">
+            
+                <li class="nav-item"><a class="nav-link active " href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Link1</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Link2</a></li>
+            
+            
+            </ul>
+            
+        
+        </nav>
+      <h3 align="center">Center Aligned Nav bar</h3>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+        
+        
+        
+            <ul class="navbar-nav">
+            
+                <li class="nav-item"><a class="nav-link active " href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Link1</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Link2</a></li>
+            
+            
+            </ul>
+            
+        
+        </nav>
+        <h3 align="right">Right Aligned Nav bar</h3>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+        
+        
+        
+            <ul class="navbar-nav ml-auto">
+            
+                <li class="nav-item"><a class="nav-link active " href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Link1</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Link2</a></li>
+            
+            
+            </ul>
+            
+        
+        </nav>
+      
+        
+        
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
