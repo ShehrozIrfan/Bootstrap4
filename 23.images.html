@@ -1,0 +1,82 @@
+<!-- 
+In this lecture we will learn about different classes that we can use with our image.
+1. 'img-fluid' makes your image responsive and fit it inside your grid.
+2. 'rounded' makes the corners of your image rounded.
+3. 'rounded-circle' class shapes the image to a circle.
+4. 'img-thumbnail' class shapes the image a thumbnail.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Images</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  
+</head>
+    
+    <body>
+    
+      
+    <div class="container">
+        <h3>Responsive image</h3>
+        
+        <div class="row">
+        
+            <div class="col-md-3 col-sm-5">
+            <!-- so we can see that if we do not specify any bootstrap class to our image then the image occupied its full length on the webpage.So, we add img-fluid class to make it responsive -->
+                <img class="img-fluid" src="image.jpg" alt="[Paris]">
+            
+            </div>
+        </div>
+            <h3>Rounded Corners image</h3>
+              <div class="row">
+        
+            <div class="col-md-3 col-sm-5">
+            <!-- to make the corners of image rounded we use 'rounded' class. -->
+                <img class="img-fluid rounded" src="image.jpg" alt="[Paris]">
+            
+            </div>
+        
+        </div>
+        <h3>Circle Image</h3>
+              <div class="row">
+        
+            <div class="col-md-3 col-sm-5">
+            <!-- to make the image circle we use rounded-circle class -->
+                <img class="img-fluid rounded-circle" src="image.jpg" alt="[Paris]">
+            
+            </div>
+        
+        </div>
+        <h3>Thumbnail image</h3>
+              <div class="row">
+        
+            <div class="col-md-3 col-sm-5">
+            <!-- to shape the image to thumbnail use img-thumbnail class. -->
+                <img class="img-fluid img-thumbnail" src="image.jpg" alt="[Paris]">
+                <!-- figure-caption class is used to add a caption to your image -->
+            <div class="figure-caption">This is Paris</div>
+                
+            </div>
+        
+        </div>
+    </div>
+        
+        <div>
+        <!-- 
+           to align image to right use float-right class to left use float-left class. But remember after appplying these your webpage will not remain in flow. To center image use mx-auto d-block class.
+           -->
+            <h3>Right Aligned Image</h3>
+        <img class="float-right" src="image.jpg" alt="[Paris]" style="width:200px; height:200px;" >
+
+        
+        </div>
+        
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
