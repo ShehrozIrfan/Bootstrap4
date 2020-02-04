@@ -1,0 +1,178 @@
+<!--
+In this lecture we will see that how aspect ratio disturbs our image gallery.
+Aspect Ratio means that the first image 'image.jpeg' that we used having dimensions 701X900 but the second image that we use have dimensions  611X899. So after adding second image we can see that it disturbs our image gallery.
+So to solve this problem we have two options:
+1- Write CSS Rules but it is not recommended because it will slow down the loading of your website.
+2- To resize the image.There are different websites available.We use 'resizeImage.net' in this example.
+What we have to do is to upload image and then don't worry about step2 and 3 on resizeimage website just set the dimensions in step4 and uncheck aspect ratio.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Aspect Ratio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  
+</head>
+    
+    <body>
+        <div class="container">
+        
+        <div class="row">
+        
+        
+            <div class="col-md-2 col-sm-4 col-lg-2 col-xs-4">
+            
+                <a href="image.jpg">
+                
+                    <img class="img-fluid img-thumbnail" src="image.jpg" alt="[Paris]" >
+                
+                </a>
+            
+            
+            </div>
+            <div class="col-md-2 col-sm-4 col-lg-2 col-xs-4">
+            
+                <a href="abc.jpg">
+                
+                    <img class="img-fluid img-thumbnail" src="abc.jpg" alt="[Paris]" >
+                
+                </a>
+            
+            
+            </div>
+            <div class="col-md-2 col-sm-4 col-lg-2 col-xs-4">
+            
+                <a href="image.jpg">
+                
+                    <img class="img-fluid img-thumbnail" src="image.jpg" alt="[Paris]" >
+                
+                </a>
+            
+            
+            </div>
+            <div class="col-md-2 col-sm-4 col-lg-2 col-xs-4">
+            
+                <a href="image.jpg">
+                
+                    <img class="img-fluid img-thumbnail" src="image.jpg" alt="[Paris]" >
+                
+                </a>
+            
+            
+            </div>
+            <div class="col-md-2 col-sm-4 col-lg-2 col-xs-4">
+            
+                <a href="image.jpg">
+                
+                    <img class="img-fluid img-thumbnail" src="image.jpg" alt="[Paris]" >
+                
+                </a>
+            
+            
+            </div>
+            <div class="col-md-2 col-sm-4 col-lg-2 col-xs-4">
+            
+                <a href="image.jpg">
+                
+                    <img class="img-fluid img-thumbnail" src="image.jpg" alt="[Paris]" >
+                
+                </a>
+            
+            
+            </div>
+        
+            
+            
+            
+        </div>
+            <br/><br/>
+
+                    <div class="row">
+        
+        
+            <div class="col-md-2 col-sm-4 col-lg-2 col-xs-4">
+            
+                <a href="image.jpg">
+                
+                    <img class="img-fluid img-thumbnail" src="image.jpg" alt="[Paris]" >
+                
+                </a>
+            
+            
+            </div>
+                        <!-- Here you can see that new image with dimensions equal to 701X900 is used. So in the second row you can see that each and everything is well-->
+            <div class="col-md-2 col-sm-4 col-lg-2 col-xs-4">
+            
+                <a href="new.jpg">
+                
+                    <img class="img-fluid img-thumbnail" src="new.jpg" alt="[Paris]" >
+                
+                </a>
+            
+            
+            </div>
+            <div class="col-md-2 col-sm-4 col-lg-2 col-xs-4">
+            
+                <a href="image.jpg">
+                
+                    <img class="img-fluid img-thumbnail" src="image.jpg" alt="[Paris]" >
+                
+                </a>
+            
+            
+            </div>
+            <div class="col-md-2 col-sm-4 col-lg-2 col-xs-4">
+            
+                <a href="image.jpg">
+                
+                    <img class="img-fluid img-thumbnail" src="image.jpg" alt="[Paris]" >
+                
+                </a>
+            
+            
+            </div>
+            <div class="col-md-2 col-sm-4 col-lg-2 col-xs-4">
+            
+                <a href="image.jpg">
+                
+                    <img class="img-fluid img-thumbnail" src="image.jpg" alt="[Paris]" >
+                
+                </a>
+            
+            
+            </div>
+            <div class="col-md-2 col-sm-4 col-lg-2 col-xs-4">
+            
+                <a href="image.jpg">
+                
+                    <img class="img-fluid img-thumbnail" src="image.jpg" alt="[Paris]" >
+                
+                </a>
+            
+            
+            </div>
+        
+            
+            
+            
+        </div>
+
+            
+        </div>
+        
+        
+
+      
+    
+        
+        
+        
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
